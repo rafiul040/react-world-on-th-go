@@ -7,14 +7,13 @@ const Countries = ({countriesPromise}) => {
 
 
 
-    const [visitedFlag, setVisitedFlag] = useState([])
+    const [visitedFlag, setVisitedFlag] = useState([]);
 
 
 
-    const handleVisitedCountries = (country) => {
-        console.log('Clicked', country)
-        const newVisitedCountries = [...visitedCountries, country]
-        setVisitedCountries(newVisitedCountries)
+    const handleVisitedCountries = ({ country }) => {
+        const newVisitedCountries = [...visitedCountries, country];
+        setVisitedCountries(newVisitedCountries);
     }
 
 
