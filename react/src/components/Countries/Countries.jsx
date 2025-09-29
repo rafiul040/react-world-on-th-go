@@ -46,14 +46,7 @@ const Countries = ({countriesPromise}) => {
 
             <div className='countries'>
 
-            {
-                countries.map((country, index) => <Country 
-                key={index} 
-                country={country}
-                handleVisitedCountries={handleVisitedCountries}
-                handleVisitedFlag={handleVisitedFlag}
-                ></Country>)
-            }
+
             </div>
         </div>
     );
